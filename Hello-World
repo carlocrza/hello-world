@@ -1,0 +1,37 @@
+# hello-world
+<!--Testing purposes-->
+
+<html>
+<head><title>Hello World!</title></head>
+
+<h1 style="font-family: helvetica, size:40px"> Carlo Cruz-Albrecht </h1>
+<p style="color: cornflowerblue, font-family: helvetica">Ooh isn't this nice. Carlo here, first time utilizing GitHub!</p>
+<img onmouseover="big(this)" onmouseout="small(this)" src="https://media.giphy.com/media/2QvTI1MVAmkEg/giphy.gif">
+
+<div style="font-family: Courier New, size: 100px, text-align: center" id="delayed" style="visibility:hidden">
+Hello World!
+</div>
+
+<script>
+
+function big(x){
+  x.style.height *= 2
+  x.style.width *= 2
+}
+
+function small(x){
+  x.style.height /= 2
+  x.style.height /= 2
+}
+
+window.onload = function(){
+var timer = setTimeout("show()",3000)
+}
+
+function show(){
+document.getElementById("delayed").style.visibility = "visible";
+}
+</script>
+
+
+</html>
