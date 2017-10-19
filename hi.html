@@ -1,0 +1,29 @@
+<html>
+<head><title>hallo!</title>
+</head>
+
+<body>
+
+<center>
+<p id="hi_athena" style="font-family: Arial Black">Hi Athena</p>
+</center>
+
+
+<script>
+	
+	var hello_text = document.getElementById("hi_athena");
+var text_timer = setInterval(animateText, 20);
+var text_id = 1;
+repeats = 0;
+function animateText() {
+	hello_text.style.fontSize = text_id;
+	console.log(hello_text.style.fontSize)
+	text_id++;
+	if(text_id == 30 && repeats < 2){
+		text_id = 0;
+		repeats++;
+	}
+}
+</script>
+
+</body>
