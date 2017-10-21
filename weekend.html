@@ -1,0 +1,34 @@
+<html>
+<head><title>hallo!</title>
+</head>
+
+<body>
+
+<center>
+<p><span id="good0" style="font-family: Arial Black">Have </span>
+<span id="good1" style="font-family: Arial Black">a </span>
+<span id="good2" style="font-family: Arial Black">Good </span>
+<span id="good3" style="font-family: Arial Black">Weekend </span>
+<span id="good4" style="font-family: Arial Black">!</span></p>
+</center>
+
+
+<script>
+var text_timer = setInterval(animateOnce, 20);
+var text_id = 1;
+repeats = 0;
+
+var item = document.getElementById("good0");
+repeats = 0;
+function animateOnce() {
+	item.style.fontSize = text_id;
+	text_id++;
+	if(text_id % 40 == 0){
+		item = document.getElementById("good" + (repeats + 1));
+		repeats += 1;
+		text_id = 20;
+	}
+}
+</script>
+
+</body>
