@@ -1,0 +1,57 @@
+<html>
+<head><title>Happy Halloween!</title>
+
+<style> 
+
+body {
+	background-color: black;
+	animation: back .5s 10;
+}
+
+@keyframes back {
+	0% {background-color: black;}
+	50% {background-color: orange;}
+	100% {background-color: black;}
+}
+
+#happy {
+	font-family: butcherman;
+	font-size: 70px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	animation: happy 10s;
+}
+
+#halloween {
+	font-family: butcherman;
+	font-size: 70px;
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	animation: halloween 10s;
+}
+
+@keyframes happy {
+	100% {left: 40%; top: 40%;}
+}
+
+@keyframes halloween {
+	100% {right: 40%; bottom: 40%;}
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<audio autoplay src="http://www.redringtones.com/wp-content/uploads/2016/11/stranger-things-theme-song.mp3#t=20">
+</audio>
+
+<span id="happy">Happy </span>
+<span id="halloween">Halloween!</span>
+
+<script src='http://use.edgefonts.net/butcherman.js'></script>
+</body>
