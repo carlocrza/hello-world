@@ -1,0 +1,58 @@
+<html>
+<head><title>Happy Birthday!</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho"/>
+<style> 
+
+body {
+	background-color: cornflowerblue;
+	animation: back 4s 15;
+}
+
+@keyframes back {
+	0% {background-color: cornflowerblue;}
+	15% {background-color: 9999FF;}
+	55% {background-color: 00CC99;}
+	85% {background-color: cornflowerblue;}
+}
+
+#happy {
+	font-family: Rancho;
+	color: white;
+	font-size: 80px;
+	position: absolute;
+	left: 38%; top: 33%;
+	animation: happy 10s;
+}
+
+#halloween {
+	font-family: Rancho;
+	color: white;
+	font-size: 80px;
+	position: absolute;
+	right: 40%; bottom: 37%;
+	animation: halloween 10s;
+}
+
+@keyframes happy {
+	0% {left: 0%; top:0%;}
+	100% {left: 38%; top: 33%;}
+}
+
+@keyframes halloween {
+	0% {right: 0%; bottom:0%;}
+	100% {right: 40%; bottom: 37%;}
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<audio autoplay src="http://baseshare.com/uploads/songs/06152017/Sigala,%20Ella%20Eyre%20-%20Came%20Here%20For%20Love%20(ErapZOne%20TUnez%20-%20playlist).mp3" type="audio/mp3">
+</audio>
+
+<span id="happy">Happy </span>
+<span id="halloween">Birthday!</span>
+</body>
